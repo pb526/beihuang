@@ -80,9 +80,9 @@ nums += px + m + n + suffix +"\n";
 //console.log(nums) 
   
 $("#nums").text(nums);
-    let filename = "保存的号码.txt"  ;//注意最好设置后缀.txt
-    let value= nums;
-    let elem = document.createElement('a');  //创建a标签
+    filename = "保存的号码.txt"  ;//注意最好设置后缀.txt
+    value= nums;
+    elem = document.createElement('a');  //创建a标签
     elem.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(value));  //设置下载文件内容
     elem.setAttribute('download', filename);  //设置下载文件名
     elem.style.display = 'none';  //设置a标签默认隐藏
