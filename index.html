@@ -1,97 +1,38 @@
-<html lang="zh-cn"><head> 
-<meta charset="utf-8"> 
-<meta http-equiv="Expires" content="-1"> 
-<meta http-equiv="Pragma" content="no-cache"> 
-<meta http-equiv="Cache-control" content="no-cache"> 
-<meta http-equiv="Cache" content="no-cache">  
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-<title>在线号码生成</title> 
-<link href="https://lib.baomitu.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" 
-rel="stylesheet"> 
-<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script> 
-<script src="https://lib.baomitu.com/layer/3.1.1/layer.js"></script> 
-<link rel="stylesheet" 
-href="https://lib.baomitu.com/layer/3.1.1/theme/default/layer.css?v=3.1.1" id="layuicss-layer"> 
-<body background="https://www.cnblogs.com/skins/moonlightink/images/top.jpg"> 
-<div class="container"> 
-<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 center-block" style="float: none;"> 
-<br> 
-<div class="panel panel-primary"> 
-<div class="panel-heading" style="background: linear-gradient(to 
-right,#b221ff,#14b7ff,#8ae68a);"> 
-<h3 class="panel-title">在线北荒号码生成</h3> 
-</div> 
-<div class="panel-body" style="text-align: center;"> 
-<div class="list-group"> 
-<div class="list-group-item list-group-item-info" style="font-weight: bold;"> 
-<label for="phonePre">格式：一行一个手机号段(前 7 位)</label> 
-<textarea id="phonePre" name="phonePre" class="form-control" rows="5"></textarea> 
-  <label for="last2">后两位号码</label>
-<input id="last2" name="last2" class="form-control" value="24" /> 
-</div> 
-<div class="list-group-item"> 
-<a onclick="genPhoneNum()" class="btn btn-block btn-primary" style="background: linear-
-gradient(to right,#b221ff,#14b7ff);">开始生成</a> 
-</div> 
-  
- <label>生成的手机号：</label> 
-<textarea id="nums" class="form-control" rows="10"></textarea> 
-</div> 
-  
-  
-</div> 
-</div> 
-</div> 
-<div class="panel panel-default text-center"> 
-<div class="panel-body"> 
-<a target="_blank" href="http://tfkapi.top/API/ssqq.php?qq=2014195801" >北荒工作室出品 by北风挽歌</a> 
-</div></div></div> 
-<script> 
-function genPhoneNum(){ 
-var phonePrestr = $('#phonePre').val(); 
-if(phonePrestr == undefined || phonePrestr == '')
-{   
-layer.msg('请输入内容', { icon: 5 });  
-return  ;
-} 
-var prexs = phonePrestr.split("\n"); 
-  
-var suffix = $('#last2').val(); 
-  
-var nums = ""; 
-   
-  
-for (var i = 0; i < prexs.length; i++) { 
-   
-var px = prexs[i]; 
-   
-for (var m = 0; m <= 9; m++) { 
-    
-for (var n = 0; n <= 9; n++) { 
-     
-nums += px + m + n + suffix +"\n"; 
-    
-}
-   
-}
-  
-}
-  
-//console.log(nums) 
-  
-$("#nums").text(nums);
-    filename = "保存的号码.txt"  ;//注意最好设置后缀.txt
-    value= nums;
-    elem = document.createElement('a');  //创建a标签
-    elem.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(value));  //设置下载文件内容
-    elem.setAttribute('download', filename);  //设置下载文件名
-    elem.style.display = 'none';  //设置a标签默认隐藏
-    document.body.appendChild(elem);  //添加至dom层
-    elem.click();  //执行点击下载事件
-    document.body.removeChild(elem);  //使用下载后移除a标签
-}
-  
-  
-</script> 
-</body> 
-</html>
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+<p>1820077</p>
+<p>1820086</p>
+<p>1820759</p>
+<p>1821124</p>
+<p>1821127</p>
+<p>1821129</p>
+<p>1821151</p>
+<p>1821815</p>
+<p>1821824</p>
+<p>1821825</p>
+<p>1821837</p>
+<p>1821843</p>
+<p>1821845</p>
+<p>1821859</p>
+<p>1821864</p>
+<p>1821873</p>
+<p>1821875</p>
+<p>1821879</p>
+<p>1821884</p>
+<p>1821886</p>
+<p>1821887</p>
+<p>1821894</p>
+<p>1821898</p>
+<p>1821910</p>
+<p>1821930</p>
+<p>1821939</p>
+<p>1821943</p>
+<p>1821947</p>
+<p>1824492</p>
+<p>1824493</p>
+	
+  </body>
+</html>		
